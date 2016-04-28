@@ -276,7 +276,7 @@ var ErraustegienMapa = (function() {
                 var txertatzeko_kodearen_leihoa =  L.control.window(mapa, {
                     title: "Txertatzeko kodea",
                     content: "<p>Mapa hau zure webgunean bistaratu nahi baduzu erabili txertatzeko kode hau:</p>" +
-                             "<textarea>&lt;iframe allowfullscreen='allowfullscreen' width='680' height='600' src='http://www.argia.eus/interaktiboak/2016-erraustegien-eraginpeko-zonaldeak/?lat=" + lat + "&lng=" + lng + "&zoom=" + zoom + "' frameBorder='0' scrolling='no'>&lt;/iframe></textarea>",
+                             "<textarea>&lt;iframe allowfullscreen='allowfullscreen' width='680' height='600' src='http://www.argia.eus/interaktiboak/2016-belgika-zentral-nuklearrak-iodo-pilulak/?lat=" + lat + "&lng=" + lng + "&zoom=" + zoom + "' frameBorder='0' scrolling='no'>&lt;/iframe></textarea>",
                     modal: true
                 });
 
