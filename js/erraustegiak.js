@@ -3,7 +3,7 @@ var Erraustegia = function(mapa, izena, koordenatuak, html, ikonoa, zirkuluak) {
 
     var self = this;
 
-    this.zoom_muga = 10;
+    this.zoom_muga = 6;
 
     this.mapa = mapa;
 
