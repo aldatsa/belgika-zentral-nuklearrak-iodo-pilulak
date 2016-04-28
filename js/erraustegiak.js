@@ -1,4 +1,4 @@
-var Erraustegia = function(mapa, izena, koordenatuak, ikonoa, zirkuluak) {
+var Erraustegia = function(mapa, izena, koordenatuak, html, ikonoa, zirkuluak) {
     "use strict";
 
     var self = this;
@@ -9,6 +9,7 @@ var Erraustegia = function(mapa, izena, koordenatuak, ikonoa, zirkuluak) {
 
     this.izena = izena;
     this.koordenatuak = koordenatuak;
+    this.html = html;
     this.zirkuluak = zirkuluak;
 
     this.ikonoa = L.icon({
@@ -47,6 +48,7 @@ Erraustegia.prototype.marraztuErraustegia = function() {
 
     this.erraustegia = L.marker(this.koordenatuak, {icon: this.ikonoa}).addTo(this.mapa);
 
+    this.erraustegia.bindPopup(this.html);
 };
 
 Erraustegia.prototype.marraztuZirkuluak = function() {

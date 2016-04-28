@@ -8,9 +8,9 @@ var ErraustegienMapa = (function() {
         erraustegien_kontrolak,
         txertatzeko_botoia,
         kontrolak,
-        lat = 43.183376,
-        lng = -2.478662,
-        zoom = 10,
+        lat = 50.8,
+        lng = 4.6,
+        zoom = 8,
         erraustegiak,
         zirkuluak,
         erraustegienIkonoa,
@@ -127,7 +127,7 @@ var ErraustegienMapa = (function() {
 
         for (var gakoa in erraustegiak) {
 
-            erraustegiak[gakoa].erraustegia = new Erraustegia(mapa, erraustegiak[gakoa].izena, erraustegiak[gakoa].koordenatuak, erraustegienIkonoa, zirkuluak);
+            erraustegiak[gakoa].erraustegia = new Erraustegia(mapa, erraustegiak[gakoa].izena, erraustegiak[gakoa].koordenatuak, erraustegiak[gakoa].html, erraustegienIkonoa, zirkuluak);
 
             // Erraustegia bistaratu behar da?
             if (zein.indexOf(gakoa) > -1) {
