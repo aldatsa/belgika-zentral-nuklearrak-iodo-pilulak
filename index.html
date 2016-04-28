@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/leaflet.css" />
+        <link rel="stylesheet" href="css/leaflet.label.css" />
+        <link rel="stylesheet" href="css/leaflet.fullscreen.css" />
+        <link rel="stylesheet" href="css/L.Control.Window.css" />
+        <link rel="stylesheet" href="css/estiloa.css" />
+    </head>
+    <body>
+        <div id="mapa"></div>
+        <script src="js/leaflet.js"></script>
+        <script src="js/leaflet.label.js"></script>
+        <script src="js/Leaflet.fullscreen.min.js"></script>
+        <script src="js/L.Control.Window.js"></script>
+        <script src="js/topojson.v1.min.js"></script>
+        <script src="js/erraustegien-mapa.js"></script>
+        <script src="js/erraustegiak.js"></script>
+        <script src="js/analytics.js"></script>
+        <script>
+            (function() {
+
+                var zirkuluak = [{
+                    distantzia: 100000,
+                    kolorea: "red",
+                    betegarriKolorea: "#f03",
+                    opakotasuna: 0.15,
+                    marra: 5
+                }];
+
+                var zentral_nuklearrak = {
+                    "Doel": {
+                        izena: "Doel",
+                        koordenatuak: [51.3227, 4.25868],
+                        html: "<div>Doel</div>" +
+                              "<div>4 erreaktore:</div>" +
+                              "<div>Doel-1: 1969an eraikitzen hasia. 1974tik martxan." +
+                              "<div>Doel-2: 1971an eraikitzen hasia. 1975etik martxan." +
+                              "<div>Doel-3: 1975ean eraikitzen hasia. 1982tik martxan." +
+                              "<div>Doel-4: 1978an eraikitzen hasia. 1985etik martxan.",
+                        erraustegia: {}
+                    },
+                    "Tihange": {
+                        izena: "Tihange",
+                        koordenatuak: [50.5333, 5.271],
+                        html: "<div>Tihange</div>" +
+                              "<div>3 erreaktore:</div>" +
+                              "<div>Tihange-1: 1970ean eraikitzen hasia. 1975tik martxan." +
+                              "<div>Tihange-2: 1976an eraikitzen hasia. 1982etik martxan." +
+                              "<div>Tihange-3: 1978an eraikitzen hasia. 1985etik martxan.",
+                        erraustegia: {}
+                    },
+                    "Garoña": {
+                        izena: "Garoña",
+                        koordenatuak: [42.7753, -3.20535],
+                        html: "<div>Garoña</div>" +
+                              "<div>Erreaktore 1:</div>" +
+                              "<div>Garoña: 1966an eraikitzen hasia. 1971an martxan jarria. tik geldirik.",
+                        erraustegia: {}
+                    },
+                };
+
+                var zentral_nuklearren_ikonoa = {
+                    url: "img/radioactive.png",
+                    tamaina: [40, 50],
+                    ainguraPuntua: [20, 30]
+                }
+
+                var mapa = ErraustegienMapa.sortu("mapa", zentral_nuklearrak, zirkuluak, zentral_nuklearren_ikonoa, {
+                    kredituak: {
+                        kokapena: "bottomleft",
+                        klaseak: "kredituak",
+                        html: "<div>" +
+                                  "<a href='http://www.argia.eus/' target='_blank'><img id='argia' src='img/argia.jpg'></a>" +
+                                  "<a href='http://www.iametza.eus/' target='_blank'><img id='iametza' src='img/iametza.png'></a>" +
+                                  "<div id='egilea'><strong>Asier Iturralde Sarasola</strong> <a href='http://aldatsa.eus' target='_blank'>@aldatsa</a></div>" +
+                                  "<div><a href='https://github.com/aldatsa/belgika-zentral-nuklearrak-iodo-pilulak' target='_blank'>Iturburu kodea (GNU GPLv3)</a></div>" +
+                              "</div>"
+                    },
+                    /*
+                     * erraustegien_kontrolak aukera pasatzen bazaio sortu metodoari kontrolak sortzen ditu modu lehenetsian,
+                     * salbuespena URLan kontrolak=false parametroa pasatzen denean.
+                     */
+                    erraustegien_kontrolak: {
+                        kokapena: "topright",
+                        klaseak: "bistaratze-aukerak"
+                    },
+                    txertatzeko_botoia: {
+                        kokapena: "topleft",
+                        klaseak:  "txertatzeko-kodea"
+                    },
+                    bistaratu_Euskal_Herria: true
+                });
+
+            })();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+}
+.bistaratze-aukerak {
+    background-color: #fff;
+    background-color: #fff;
+    padding: 0px 4px 0px 0px;
+}
+.bistaratze-aukerak label {
+    vertical-align: text-bottom;
+}
+#mapa {
+    height: 100%;
+}
+.kredituak {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+    background-color: #fff;
+    width: 170px;
+    font-size: 10px;
+    font-family: Arial,Helvetica,sans-serif;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.65);
+    border-radius: 4px;
+}
+.kredituak #argia {
+    width: 75px;
+}
+.kredituak #iametza {
+    width: 75px;
+    margin-left: 15px;
+}
+.kredituak #egilea {
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+.kredituak a {
+    color: #e50000;
+}
+.txertatzeko-kodea a {
+    background: #fff url(txertatzeko.png) no-repeat 0 0;
+    background-size: 26px 26px;
+}
+.leaflet-label {
+    border-color: #f03;
+    border-width: 3px;
+    font: 10px/16px "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 2px 2px;
+    left: -29px;
+}
+.leaflet-label::before, .leaflet-label::after {
+    content: none;
+}
+.control-window textarea {
+    width: 98%;
+    height: 65px;
+}
+.leaflet-top.leaflet-right {
+    /* Hau gabe pantaila txikietan bistaratze-aukerak kontrolak zoom-aren aukeren gainera joaten dira.
+     * Bistaratze-aukerak goian eskuinean jarri ordez beste nonbait badaude hau aldatu beharra dago.
+     */
+    max-width: calc(100% - 60px);
+}
+@media (max-width: 500px) {
+    .kredituak {
+        width: 135px;
+        font-size: 8.5px;
+    }
+    .kredituak #argia {
+        width: 55px;
+    }
+    .kredituak #iametza {
+        width: 55px;
+        margin-left: 5px;
+    }
+}
