@@ -1,8 +1,11 @@
-#Belgikako zentral nuklearren eraginpeko zonaldeen bisualizazioa
+# ARGIA.eus - Belgikako zentral nuklearren eraginpeko zonaldeen bisualizazioa
 
-Belgikako gobernuak zentral nuklearren inguruko arrisku eremua 100 km-tara zabaltzea erabaki du eta bertako herritar guztiei iodo pilulak banatuko dizkie. Horrek praktikan Belgikako populazio osoa arriskupean dagoela adierazten du.
+2016ko apirilaren amaieran Belgikako gobernuak zentral nuklearren inguruko arrisku eremua 100 km-tara zabaltzea erabaki du eta bertako herritar guztiei iodo pilulak banatuko dizkie. Horrek praktikan Belgikako populazio osoa arriskupean dagoela adierazten du.
 
 Garoñaren inguruan ere bisualizatzen da 100 km-ko eremua.
+
+[ARGIA.eus](http://www.argia.eus)en argitaratua: http://www.argia.eus/albistea/iodo-pilulak-belgikan-balizko-istripu-nuklearren-prebentziorako
+
 
 ## Lizentzia
 
