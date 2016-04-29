@@ -79,3 +79,6 @@ html, body {
         margin-left: 5px;
     }
 }
+.leaflet-popup {
+    z-index: 10;
+}
